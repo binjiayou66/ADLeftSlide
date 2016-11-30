@@ -23,6 +23,11 @@
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
     [_window addSubview:[ADLeftSlideView sharedView]];
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.frame = CGRectMake(20, 40, 60, 60);
+    [btn addTarget:self action:@selector(aaa) forControlEvents:UIControlEventTouchUpInside];
+    [[ADLeftSlideView sharedView].leftView addSubview:btn];
+    
     [_window makeKeyAndVisible];
     
     ViewController * vc = [[ViewController alloc] init];
@@ -30,6 +35,10 @@
     _window.rootViewController = nav;
     
     return YES;
+}
+
+- (void)aaa {
+    NSLog(@"kkkk");
 }
 
 

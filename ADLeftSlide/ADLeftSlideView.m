@@ -10,8 +10,6 @@
 
 @interface ADLeftSlideView ()
 
-/** 侧边视图 */
-@property (nonatomic, strong) UIView * leftView;
 /** 滑动起始点 */
 @property (nonatomic, assign) CGPoint srcPoint;
 

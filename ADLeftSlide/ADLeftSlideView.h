@@ -10,6 +10,9 @@
 
 @interface ADLeftSlideView : UIView
 
+/** 侧边视图 */
+@property (nonatomic, strong) UIView * leftView;
+
 + (instancetype)sharedView;
 
 /** 是否显示蒙版 */
