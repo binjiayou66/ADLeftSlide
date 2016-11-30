@@ -10,7 +10,4 @@
 
 @interface ADTableView : UITableView
 
-/** 滑动停止 */
-@property (nonatomic, copy) void (^slideEnedCallBack)(BOOL);
-
 @end

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "ADLeftSideView.h"
+#import "ADLeftSlideView.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.backgroundColor = [UIColor whiteColor];
-    [_window addSubview:[ADLeftSideView sharedLeftSideView]];
+    [_window addSubview:[ADLeftSlideView sharedView]];
     [_window makeKeyAndVisible];
     
     ViewController * vc = [[ViewController alloc] init];

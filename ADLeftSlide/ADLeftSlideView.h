@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    ADLeftSlideToucheStatusBegin = -1,
-    ADLeftSlideToucheStatusMoving,
-    ADLeftSlideToucheStatusEnd
-} ADLeftSlideToucheStatus;
-
 @interface ADLeftSlideView : UIView
 
 + (instancetype)sharedView;

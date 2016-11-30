@@ -7,7 +7,7 @@
 //
 
 #import "ADTableView.h"
-#import "ADLeftSideView.h"
+#import "ADLeftSlideView.h"
 
 @implementation ADTableView {
     CGPoint _srcPoint;
@@ -34,22 +34,22 @@
     CGFloat delX = currentPoint.x - _srcPoint.x;
     CGFloat delY = currentPoint.y - _srcPoint.y;
     if (fabs(delX) > fabs(delY)) {
-        ADLeftSideView * leftSideView = [ADLeftSideView sharedLeftSideView];
+        ADLeftSlideView * leftSlideView = [ADLeftSlideView sharedView];
         // 侧滑
         self.scrollEnabled = NO;
         if (isEnded) {
             [UIView animateWithDuration:0.25 animations:^{
-                [leftSideView slideEndedAdjustPosition:50 - LEFTSIDE_VIEW_WIDTH];
+                [leftSlideView adjustLeftViewPosition:100 - LEFTSIDE_VIEW_WIDTH];
             } completion:^(BOOL finished) {
-                self.scrollEnabled = leftSideView.frame.origin.x < 0;
-                self.slideEnedCallBack(leftSideView.frame.origin.x == 0);
+                self.scrollEnabled = YES;
+                [leftSlideView showCoverView:[leftSlideView leftViewPositionX] == 0];
             }];
         }else {
             // 正在滑动
-            if (delX > 0 && leftSideView.frame.origin.x < -0 && _srcPoint.x < self.bounds.size.width / 2) {
-                [leftSideView positionX:delX - LEFTSIDE_VIEW_WIDTH >= 0 ? 0 : delX - LEFTSIDE_VIEW_WIDTH];
-            }else if (delX < 0 && leftSideView.frame.origin.x > -LEFTSIDE_VIEW_WIDTH) {
-                [leftSideView positionX:delX];
+            if (delX > 0 && [leftSlideView leftViewPositionX] < -0 && _srcPoint.x < self.bounds.size.width / 2) {
+                [leftSlideView leftViewPositionX:delX - LEFTSIDE_VIEW_WIDTH >= 0 ? 0 : delX - LEFTSIDE_VIEW_WIDTH];
+            }else if (delX < 0 && leftSlideView.frame.origin.x > -LEFTSIDE_VIEW_WIDTH) {
+                [leftSlideView leftViewPositionX:delX];
             }
         }
     }

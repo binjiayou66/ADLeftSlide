@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D56111F1DEEC07E00A6DFDD /* ADLeftSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D56111E1DEEC07E00A6DFDD /* ADLeftSlideView.m */; };
 		9DC5BFCB1DE56B940068CB92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5BFCA1DE56B940068CB92 /* main.m */; };
 		9DC5BFCE1DE56B940068CB92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5BFCD1DE56B940068CB92 /* AppDelegate.m */; };
 		9DC5BFD11DE56B940068CB92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5BFD01DE56B940068CB92 /* ViewController.m */; };
 		9DC5BFD61DE56B940068CB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC5BFD51DE56B940068CB92 /* Assets.xcassets */; };
 		9DC5BFD91DE56B940068CB92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC5BFD71DE56B940068CB92 /* LaunchScreen.storyboard */; };
-		9DC5BFE21DE56E2D0068CB92 /* ADCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5BFE11DE56E2D0068CB92 /* ADCoverView.m */; };
-		9DC5BFE51DE56E3A0068CB92 /* ADLeftSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5BFE41DE56E3A0068CB92 /* ADLeftSideView.m */; };
 		9DC5BFE81DE56E6E0068CB92 /* ADTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5BFE71DE56E6E0068CB92 /* ADTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D56111D1DEEC07E00A6DFDD /* ADLeftSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLeftSlideView.h; sourceTree = "<group>"; };
+		9D56111E1DEEC07E00A6DFDD /* ADLeftSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLeftSlideView.m; sourceTree = "<group>"; };
 		9DC5BFC61DE56B940068CB92 /* ADLeftSlide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADLeftSlide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC5BFCA1DE56B940068CB92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9DC5BFCC1DE56B940068CB92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,10 +28,6 @@
 		9DC5BFD51DE56B940068CB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC5BFD81DE56B940068CB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DC5BFDA1DE56B940068CB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DC5BFE01DE56E2D0068CB92 /* ADCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCoverView.h; sourceTree = "<group>"; };
-		9DC5BFE11DE56E2D0068CB92 /* ADCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCoverView.m; sourceTree = "<group>"; };
-		9DC5BFE31DE56E3A0068CB92 /* ADLeftSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLeftSideView.h; sourceTree = "<group>"; };
-		9DC5BFE41DE56E3A0068CB92 /* ADLeftSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLeftSideView.m; sourceTree = "<group>"; };
 		9DC5BFE61DE56E6E0068CB92 /* ADTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTableView.h; sourceTree = "<group>"; };
 		9DC5BFE71DE56E6E0068CB92 /* ADTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTableView.m; sourceTree = "<group>"; };
 		9DC5BFE91DE570110068CB92 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -73,12 +70,10 @@
 				9DC5BFCF1DE56B940068CB92 /* ViewController.h */,
 				9DC5BFD01DE56B940068CB92 /* ViewController.m */,
 				9DC5BFC91DE56B940068CB92 /* Supporting Files */,
-				9DC5BFE01DE56E2D0068CB92 /* ADCoverView.h */,
-				9DC5BFE11DE56E2D0068CB92 /* ADCoverView.m */,
-				9DC5BFE31DE56E3A0068CB92 /* ADLeftSideView.h */,
-				9DC5BFE41DE56E3A0068CB92 /* ADLeftSideView.m */,
 				9DC5BFE61DE56E6E0068CB92 /* ADTableView.h */,
 				9DC5BFE71DE56E6E0068CB92 /* ADTableView.m */,
+				9D56111D1DEEC07E00A6DFDD /* ADLeftSlideView.h */,
+				9D56111E1DEEC07E00A6DFDD /* ADLeftSlideView.m */,
 			);
 			path = ADLeftSlide;
 			sourceTree = "<group>";
@@ -168,10 +163,9 @@
 			files = (
 				9DC5BFE81DE56E6E0068CB92 /* ADTableView.m in Sources */,
 				9DC5BFD11DE56B940068CB92 /* ViewController.m in Sources */,
+				9D56111F1DEEC07E00A6DFDD /* ADLeftSlideView.m in Sources */,
 				9DC5BFCE1DE56B940068CB92 /* AppDelegate.m in Sources */,
-				9DC5BFE51DE56E3A0068CB92 /* ADLeftSideView.m in Sources */,
 				9DC5BFCB1DE56B940068CB92 /* main.m in Sources */,
-				9DC5BFE21DE56E2D0068CB92 /* ADCoverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +318,7 @@
 				9DC5BFDF1DE56B940068CB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
